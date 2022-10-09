@@ -1,0 +1,36 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>390</x><y>100</y><w>210</w><h>190</h></coordinates><panel_attributes>Sistema
+-
+-
++ montosPorCajero(): double[]
++ informeDePedidos(): Informe[]
+- buscar</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>720</x><y>100</y><w>210</w><h>190</h></coordinates><panel_attributes>Cajero
+-
+- id: int
+- apellido: String
+- antiguedad: int
+-
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>590</x><y>120</y><w>150</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+- cajeros
+m1=5</panel_attributes><additional_attributes>130;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>380</x><y>420</y><w>210</w><h>190</h></coordinates><panel_attributes>Robot
+-
+- codigo: String
+- bateria: double
+-
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>490</x><y>280</y><w>70</w><h>160</h></coordinates><panel_attributes>lt=&lt;-
+- robots
+m1=8</panel_attributes><additional_attributes>10;140;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>720</x><y>410</y><w>210</w><h>190</h></coordinates><panel_attributes>Pedido
+-
+- nombreCliente: String
+- idCajero: int
+- codigoRobot: String
+- monto: double
+-
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>280</y><w>330</w><h>150</h></coordinates><panel_attributes>lt=&lt;-
+- pedidos
+m1=*</panel_attributes><additional_attributes>300;130;300;40;10;40;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>60</x><y>100</y><w>210</w><h>190</h></coordinates><panel_attributes>Informe
+-
+- monto: double
+- apellidoCajero: String
+- bateriaRobot: double
+-
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>260</x><y>160</y><w>150</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;130;10</additional_attributes></element></diagram>
