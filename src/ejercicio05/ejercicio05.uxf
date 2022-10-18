@@ -1,0 +1,37 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>180</x><y>50</y><w>270</w><h>190</h></coordinates><panel_attributes>EmpresaCamiones
+-
+_- TAMANIO_FLOTA: int = 10_
+_- CANT_CHOFERES: int = 20_
+-
++ EmpresaCamiones()
++ obtenerCostosDeViajes(): ArrayList&lt;double&gt;
++ obtenerViajesPorChoferCamion(): int[][]
+- obtenerHonorarios(String): double
+- obtenerCostoPorKm(int): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>220</x><y>340</y><w>210</w><h>190</h></coordinates><panel_attributes>Camion
+-
+- id: int
+- costoPorKm: double
+-
++ esTuId(int): boolean
++ getCostoPorKm(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>360</x><y>230</y><w>120</w><h>130</h></coordinates><panel_attributes>lt=&lt;-
+- flota
+m1=TAMANIO_FLOTA</panel_attributes><additional_attributes>10;110;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>580</x><y>50</y><w>210</w><h>190</h></coordinates><panel_attributes>Chofer
+-
+- id: String
+- nombre: String
+- pagoPorViaje: double
+-
++ esTuId(String): boolean
++ getPagoPorViaje(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>440</x><y>110</y><w>160</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+- choferes
+m1=CANT_CHOFERES</panel_attributes><additional_attributes>140;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>550</x><y>340</y><w>210</w><h>190</h></coordinates><panel_attributes>Viaje
+-
+- idCamion: int
+- idChofer: String
+- kms: double
+-
++ getIdCamion(): int
++ getIdChofer(): String
++ getKms(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>440</x><y>190</y><w>240</w><h>170</h></coordinates><panel_attributes>lt=&lt;-
+- viajes
+m1=0..*</panel_attributes><additional_attributes>200;150;200;130;50;130;50;10;10;10</additional_attributes></element></diagram>

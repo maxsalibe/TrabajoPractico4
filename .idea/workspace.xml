@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b5112ea-fd39-4ae4-a953-05adf4dc2fb9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ejercicio04/EmpresaTrenes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ejercicio04/Estacion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ejercicio04/Recorrido.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ejercicio04/Reserva.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ejercicio04/pruebas/Principal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ejercicio05/Camion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ejercicio05/Chofer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ejercicio05/EmpresaCamiones.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ejercicio05/Viaje.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ejercicio05/ejercicio05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ejercicio05/ejercicio05.uxf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ejercicio05/pruebas/Principal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,16 +40,18 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/salibemaximiliano/TProg1/TrabajoPractico4&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "D:/Desktop/TP4/TrabajoPractico4"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="ejercicio05" />
       <recent name="ejercicio04" />
       <recent name="ejercicio01.clases" />
       <recent name="clases" />
@@ -58,7 +61,7 @@
       <recent name="$PROJECT_DIR$/src/ejercicio01/clases" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ejercicio04.pruebas.Principal">
+  <component name="RunManager" selected="Application.ejercicio05.pruebas.Principal">
     <configuration name="Principal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ejercicio01.pruebas.Principal" />
       <module name="TrabajoPractico4" />
@@ -98,8 +101,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ejercicio05.pruebas.Principal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ejercicio05.pruebas.Principal" />
+      <module name="TrabajoPractico4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ejercicio05.pruebas.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ejercicio05.pruebas.Principal" />
         <item itemvalue="Application.ejercicio04.pruebas.Principal" />
         <item itemvalue="Application.ejercicio03.test.Principal" />
         <item itemvalue="Application.Principal" />
@@ -127,6 +144,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
