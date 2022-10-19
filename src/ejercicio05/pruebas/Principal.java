@@ -59,5 +59,13 @@ public class Principal {
 
         // Llamo a los metodos principales
         System.out.println(e.obtenerCostosDeViajes());
+
+        int[][] matriz = e.obtenerViajesPorChoferCamion();
+        for (int i = 0; i < EmpresaCamiones.TAMANIO_FLOTA; i++) {
+            for (int j = 0; j < EmpresaCamiones.CANT_CHOFERES; j++) {
+                System.out.printf("%d\t", matriz[i][j]);
+            }
+            System.out.println();
+        }
     }
 }

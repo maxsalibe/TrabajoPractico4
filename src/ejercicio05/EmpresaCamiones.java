@@ -3,8 +3,8 @@ package ejercicio05;
 import java.util.ArrayList;
 
 public class EmpresaCamiones {
-    private static final int TAMANIO_FLOTA = 10;
-    private static final int CANT_CHOFERES = 20;
+    public static final int TAMANIO_FLOTA = 10; // Cambie a public para usarlo desde el main
+    public static final int CANT_CHOFERES = 20; // Cambie a public para usarlo desde el main
     private Camion[] flota;
     private Chofer[] choferes;
     private ArrayList<Viaje> viajes;
