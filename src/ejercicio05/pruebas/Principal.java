@@ -4,6 +4,7 @@ import ejercicio05.Camion;
 import ejercicio05.Chofer;
 import ejercicio05.EmpresaCamiones;
 
+// Testeado con exito en 2022-10-19
 public class Principal {
     public static void main(String[] args) {
         // Genero la empresa
