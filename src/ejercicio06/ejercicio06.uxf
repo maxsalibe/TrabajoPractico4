@@ -1,0 +1,40 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>110</x><y>20</y><w>240</w><h>190</h></coordinates><panel_attributes>Frigorifico
+-
+_- CANTIDAD_VENDEDORES: int = 20_
+-
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>580</x><y>20</y><w>210</w><h>190</h></coordinates><panel_attributes>Vendedor
+-
+- id: int
+- nombre: String
+-
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>340</x><y>70</y><w>260</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+- vendedores
+m1=CANTIDAD_VENDEDORES</panel_attributes><additional_attributes>240;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>120</x><y>290</y><w>210</w><h>190</h></coordinates><panel_attributes>Producto
+-
+- codigo: String
+- nombre: String
+- precio: double
+-
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>220</x><y>200</y><w>90</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
+- productos
+m1=*</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>460</x><y>330</y><w>210</w><h>190</h></coordinates><panel_attributes>Cliente
+-
+- razonSocial: String
+- cuit: String
+- telefono: String
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>340</x><y>150</y><w>230</w><h>200</h></coordinates><panel_attributes>lt=&lt;-
+- clientes
+m1=*</panel_attributes><additional_attributes>200;180;200;120;60;120;60;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>780</x><y>330</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;Enum&gt;&gt;
+Pais
+-
+_+ ARGENTINA_
+_+ CHILE_
+_+ URUGUAY_
+_+ BRASIL_</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>660</x><y>360</y><w>140</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+- pais
+m1=1</panel_attributes><additional_attributes>120;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>120</x><y>540</y><w>210</w><h>190</h></coordinates><panel_attributes>Pedido
+-
+- id: int
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>60</x><y>200</y><w>170</w><h>390</h></coordinates><panel_attributes>lt=&lt;-
+- pedidos
+m1=*</panel_attributes><additional_attributes>60;360;10;360;10;50;150;50;150;10</additional_attributes></element></diagram>
