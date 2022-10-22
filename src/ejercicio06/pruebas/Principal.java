@@ -2,12 +2,11 @@ package ejercicio06.pruebas;
 
 import ejercicio06.Frigorifico;
 import ejercicio06.Pais;
-import ejercicio06.Pedido;
 import ejercicio06.Producto;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
+// Testeado con exito en 2022-10-22
 public class Principal {
     public static void main(String[] args) {
 
@@ -82,5 +81,12 @@ public class Principal {
         f.generarPedido(19,"16", p5);
 
         f.informarCantPedidos();
+        System.out.println("Lo que sigue son los clientes por pais, en el orden\nArgentina, Chile, Uruguay y Brasil:");
+        for (int i :
+                f.clientesPorPais()) {
+            System.out.print(i + "\t");
+        }
+        System.out.println();
+        System.out.println("El pais mas rentable es " + f.paisMasRentable());
     }
 }

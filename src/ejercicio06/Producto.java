@@ -10,4 +10,8 @@ public class Producto {
         this.nombre = nombre;
         this.precio = precio;
     }
+
+    public double getPrecio() {
+        return this.precio;
+    }
 }

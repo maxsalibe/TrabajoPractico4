@@ -20,4 +20,13 @@ public class Pedido {
     public String getCuitCliente() {
         return cuitCliente;
     }
+
+    public double getPrecio() {
+        double precioPedido = 0;
+        for (Producto prod :
+                this.productosComprados) {
+            precioPedido += prod.getPrecio();
+        }
+        return precioPedido;
+    }
 }

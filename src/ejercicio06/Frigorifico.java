@@ -29,13 +29,13 @@ public class Frigorifico {
         System.out.println("A continuacion, se informa el numero de pedidos por vendedor y por pais:");
         System.out.print("Vendedor #");
         for (int i = 0; i < Pais.values().length; i++) {
-            System.out.print("\t" + Pais.values()[i]);
+            System.out.print("\t\t\t" + Pais.values()[i]);
         }
         System.out.println();
         for (int i = 0; i < CANTIDAD_VENDEDORES; i++) {
             System.out.print(i);
             for (int j = 0; j < Pais.values().length; j++) {
-                System.out.print("\t" + matriz[i][j]);
+                System.out.print("\t\t\t\t\t" + matriz[i][j]);
             }
             System.out.println();
         }
@@ -79,5 +79,31 @@ public class Frigorifico {
 
     public void generarPedido(int idVendedor, String cuitCliente, ArrayList<Producto> productosComprados) {
         this.pedidos.add(new Pedido(idVendedor, cuitCliente, productosComprados));
+    }
+
+    public int[] clientesPorPais() {
+        int [] clientesAInformar = new int[Pais.values().length];
+        for (Cliente c :
+                this.clientes) {
+            clientesAInformar[c.getNumeroPais()]++;
+        }
+        return clientesAInformar;
+    }
+
+    public String paisMasRentable() {
+        int[] totalRecaudadoPorPais = new int[Pais.values().length];
+        for (Pedido p :
+                this.pedidos) {
+            totalRecaudadoPorPais[(obtenerNumeroDelPaisDelPedido(p.getCuitCliente()))] += p.getPrecio();
+        }
+        Pais pais = null;
+        double maximoRecaudadoPorElPais = 0;
+        for (int i = 0; i < totalRecaudadoPorPais.length; i++) {
+            if (totalRecaudadoPorPais[i] > maximoRecaudadoPorElPais) {
+                pais = Pais.values()[i];
+                maximoRecaudadoPorElPais = totalRecaudadoPorPais[i];
+            }
+        }
+        return pais.toString();
     }
 }
