@@ -1,0 +1,37 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>160</x><y>60</y><w>210</w><h>190</h></coordinates><panel_attributes>Aerolinea
+-
+
+-
++ asignar(): void
++ asientosLibresConVentanilla(): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>540</x><y>60</y><w>210</w><h>190</h></coordinates><panel_attributes>Reserva
+-
+- id: String
+- dniCliente: String
+- asiento: int
+-
++ getAsiento(): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>360</x><y>100</y><w>200</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+- reservas
+m1=*</panel_attributes><additional_attributes>180;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>160</x><y>350</y><w>210</w><h>190</h></coordinates><panel_attributes>Avion
+-
+_- FILAS: int = 16_
+_- COLUMNAS: int = 6_
+- marca: String
+-
++ reservarAsiento(int): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>240</x><y>240</y><w>70</w><h>130</h></coordinates><panel_attributes>lt=&lt;-
+- avion
+m1=1</panel_attributes><additional_attributes>10;110;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>530</x><y>350</y><w>140</w><h>190</h></coordinates><panel_attributes>Asiento
+-
+- numero: int
+-
++ reservar(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>360</x><y>390</y><w>190</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+- asientos
+m1=[FILAS][COLUMNAS]</panel_attributes><additional_attributes>170;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>830</x><y>350</y><w>160</w><h>190</h></coordinates><panel_attributes>&lt;&lt;Enum&gt;&gt;
+EstadoAsiento
+-
+_+ LIBRE_
+_+ RESERVADO_
+_+ OCUPADO_
+-
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>660</x><y>390</y><w>190</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+- estado
+m1=1</panel_attributes><additional_attributes>170;20;10;20</additional_attributes></element></diagram>
